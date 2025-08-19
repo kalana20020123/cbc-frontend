@@ -5,8 +5,8 @@ import "./testing.css";
 
 export default function Testing() {
 
-    const [count, setCount] = useState(0); // Initialize count state // with useState hook
-    const [name, setName] = useState("Student"); // Initialize name state
+    const [count, setCount] = useState(0);  // Initialize count state // with useState hook
+    const [name, setName] = useState("Student");  // Initialize name state
 
     function increment() {
         setCount(count + 1); // Increment count by 1
