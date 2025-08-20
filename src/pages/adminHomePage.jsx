@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { BsGraphUp, BsBox, BsCart, BsPeople } from 'react-icons/bs';
 import { BrowserRouter, Routes, Route } from 'react-router-dom' 
+import Products from './admin/products.jsx'; 
 
 
 export default function AdminHomePage() {
@@ -36,7 +37,7 @@ export default function AdminHomePage() {
            <div className="w-[80%] h-screen bg-red-600">
             <Routes>
              <Route path="/dashboard" element={<h1>Dashboard</h1>} />
-             <Route path="/products" element={<h1>Products</h1>} />
+             <Route path="/products" element={<Products/>} />
              <Route path="/orders" element={<h1>Orders</h1>} />
              <Route path="/customers" element={<h1>Customers</h1>} />
              <Route path="/*" element={<h1>404 error</h1>} />
